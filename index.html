@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;900&family=Pacifico&display=swap" rel="stylesheet">
+    <title>Katie Embrey-Farquhar</title>
+</head>
+<body>
+    <div id="scroll">
+        <h1>Scroll Down</h1>
+    </div>
+    <section id="main">
+        <div class="side" id="side1"></div>
+        <div class="side" id="side2"></div>
+    </section>
+    <div class="content">
+        <div id="banner">
+            <img src="katie-avatar.png" id="avatar" alt="avatar of katie in anime style" />
+            <div id="name">
+                <h2>Katie Embrey-Farquhar</h2>
+                <h4>Full-Stack Web Developer</h4>
+            </div>
+        </div>
+        <div id="intro">
+        <p> I'm a full-stack developer proficient in Javascript, PHP, Python, React, React-Native, Flutter, Node.js, MySQL, PostgreSQL, and Git. I'm a Lambda School graduate, currently working as a React Developer at Charter Communications.
+            <br>
+            <br>
+            Things I love:
+            <br><br>
+            <ul>
+                <li>coding</li>
+                <li>learning</li>
+                <li>traveling</li>
+                <li>art</li>
+                <li>music</li>
+                <li>reading</li>
+                <li>"a-ha" moments</li>
+                <li>spending time with my dog and my husband</li>
+                <li>new opportunities</li>
+                <li>trying new things</li>
+            </ul>
+            <br><br>
+            I'm passionate when I find purpose in what I'm doing. And when I'm passionate, I work fiercely. I am looking for an opportunity that ignites my inner fire and a place where I feel like the work I do is important.
+            <br><br>
+            I have over a year's experience working remotely with cross-functional teams to learn and master difficult material in a very fast-paced environment. I've held several Team Lead positions and always enjoy the experience of motivating others to do their best, as well as being part of the team.
+        </p>
+    </div>
+    </div>
+
+    <script type="text/javascript">
+        const side1 = document.getElementById("side1");
+        window.addEventListener("scroll", () => {
+            side1.style.left = -window.pageYOffset + "px";
+        })
+        const side2 = document.getElementById("side2");
+        window.addEventListener("scroll", () => {
+            side2.style.left = window.pageYOffset + "px";
+        })
+    </script>
+    
+</body>
+</html>
